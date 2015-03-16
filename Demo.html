@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>WebRtc Floyd–Steinberg dithering by MojoManyana</title>
+
+</head>
+<body>
+      <canvas width="320" height="240" id="displayCanvas" style="margin: 0px auto;"></canvas>
+      <script src="js/ColorRgb.js"></script>
+      <script src="js/Halftone.js"></script>
+      <script type="text/javascript">
+          function startLoading() {
+              var halftone = new Halftone();
+              halftone.startProcessing(document.getElementById("displayCanvas"));
+          }
+          startLoading();
+      </script>
+</body>
+
+</html>
